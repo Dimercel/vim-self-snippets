@@ -1,0 +1,23 @@
+snippet namespace
+alias ns
+    var ${1:#:namespace} = (function () {
+     
+        var myPrivateVar, myPrivateMethod;
+     
+        myPrivateVar = 0;
+     
+        myPrivateMethod = function() {
+
+        };
+     
+        return {
+     
+            myPublicVar: "foo",
+     
+            myPublicFunction: function( ) {
+     
+            }
+        };
+     
+    })();
+
