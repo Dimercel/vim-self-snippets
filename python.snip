@@ -1,0 +1,9 @@
+snippet property
+alias prop
+    @property
+    def ${1:#:name}(self):
+        return self.__${2:#:name}
+
+    @${3:#:name}.setter
+    def ${4:#:name}(self, value):
+        ${0:TARGET}
