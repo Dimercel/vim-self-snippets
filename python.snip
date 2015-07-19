@@ -7,3 +7,7 @@ alias prop
     @${3:#:name}.setter
     def ${4:#:name}(self, value):
         ${0:TARGET}
+
+snippet genlist
+alias genl
+    [ ${1:#:expr(x)} for x in ${2:#:list}]
