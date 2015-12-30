@@ -2,7 +2,7 @@ snippet foldl
     foldl (\acc x -> x : acc) [] [1, 2, 3, 4]
 
 snippet foldr
-    foldl (\x acc -> x : acc) [] [1, 2, 3, 4]
+    foldr (\x acc -> x : acc) [] [1, 2, 3, 4]
 
 snippet functor_laws
     fmap id x = id x
