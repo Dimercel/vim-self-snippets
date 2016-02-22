@@ -7,3 +7,14 @@ snippet foldr
 snippet functor_laws
     fmap id x = id x
     (f . g) x = fmap f(fmap g x)
+
+snippet applicative_laws
+    pure id <*> v = v
+    pure f <*> pure x = pure (f x)
+    u <*> pure y = pure ($ y) <*> u
+    u <*> (v <*> w) = pure (.) <*> u <*> v <*> w
+
+snippet monad_laws
+    return a >>= k  =  k a
+    m >>= return    =  m
+    m >>= (\x -> k x >>= h) = (m >>= k) >>= h
